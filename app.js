@@ -39,6 +39,7 @@ try {
   //var dotenv = require('dotenv');
   //dotenv.load();
   //require('dotenv').config()
+  //console.log("variable de ambiente:::  " +  process.env.BD)
 
 
 
