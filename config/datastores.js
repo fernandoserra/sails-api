@@ -49,7 +49,8 @@ module.exports.datastores = {
     *                                                                          *
     ***************************************************************************/
 
-    adapter: 'sails-mysql', ///
+    adapter: 'sails-mysql',
+    url: 'mysql://root:Fer123456789$@localhost:3306/sails-api', // #TODO: variable de ambiente   
     // url: 'mysql://user:password@host:port/database',
 
   },
