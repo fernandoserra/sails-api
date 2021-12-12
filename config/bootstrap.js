@@ -32,12 +32,6 @@ module.exports.bootstrap = async function () {
 		{ name: 'Pedro Clemente'},
 	]);
 
-	await sails.models.phones.createEach([
-		{ phone: '931234565', owner: 1 }, 
-		{ phone: '725344563', owner: 1 },
-	]);
-
-
 	await sails.models.pet.createEach([
 		{ name: 'Salchica', color: '...'},
 		{ name: 'Pastor', color: '...' },
@@ -45,6 +39,16 @@ module.exports.bootstrap = async function () {
 		{ name: 'Pug', color: '...' },
 		{ name: 'Doberman', color: '...' },
 		{ name: 'Bóxer', color: '...' },
+	]);
+
+	await sails.models.petuser.createEach([
+		{ owner: 1, pet: 1 }, 
+		{ owner: 1, pet: 2 },
+	]);
+
+	await sails.models.phones.createEach([
+		{ phone: '931234565', owner: 1 }, 
+		{ phone: '725344563', owner: 1 },
 	]);
 
 };
