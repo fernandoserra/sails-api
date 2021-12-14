@@ -5,6 +5,8 @@
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
+const User = require("../models/User");
+
 module.exports = {
 
     async create(req, res) {
