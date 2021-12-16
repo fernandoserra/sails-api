@@ -14,7 +14,7 @@ module.exports = {
 		//  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 		phone: {
 			type: 'string',
-      		required: true,
+			required: true,
 			minLength: 2
 			//message: 'Invalid phone!  Please .....'
 		},
@@ -30,9 +30,16 @@ module.exports = {
 
 		owner: {
 			model: 'user',
-			required: true 
-		}
+			required: true
+		},
 
+		/*validate: (req) => {
+			req.check('phone')
+				.exists()
+				.isLength({ min: 2 }).withMessage('Phone invalid');
+
+			//req.check('description').exists();
+		}*/
 	},
 
 };
