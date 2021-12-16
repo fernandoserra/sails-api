@@ -14,7 +14,9 @@ module.exports = {
 		//  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 		phone: {
 			type: 'string',
-      		required: true   
+      		required: true,
+			minLength: 2
+			//message: 'Invalid phone!  Please .....'
 		},
 
 		//  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -35,3 +37,4 @@ module.exports = {
 
 };
 
+//https://sailsjs.com/documentation/concepts/models-and-orm/validations
