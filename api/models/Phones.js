@@ -13,7 +13,8 @@ module.exports = {
 		//  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
 		//  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
 		phone: {
-			type: 'string'
+			type: 'string',
+      		required: true   
 		},
 
 		//  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
@@ -26,7 +27,8 @@ module.exports = {
 		//  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
 		owner: {
-			model: 'user'
+			model: 'user',
+			required: true 
 		}
 
 	},

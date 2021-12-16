@@ -9,17 +9,21 @@ const Phones = require("../models/Phones");
 
 module.exports = {
   
-    async create(req, res) {
+    /*async create(req, res) {
         console.log("Ejecutando create")
         try {
             let params = req.allParams();
+
+            console.log(params)
             const phone = await Phones.create({
                 phone: params.phone,
             }).fetch();
+
+
             return res.ok(phone);
         } catch (error) {
             return res.serverError(error)
         }
-    },
+    },*/
 
 };
