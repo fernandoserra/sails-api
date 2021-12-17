@@ -26,4 +26,14 @@ module.exports = {
         }
     },*/
 
+
+    
+    async total(req, res) {
+        try {
+            return res.send(`total`);
+        } catch (error) {
+            return res.serverError(error)
+        }
+    }
+
 };
