@@ -32,6 +32,7 @@ module.exports.routes = {
   * not match any of those, it is matched against static assets.             *
   *                                                                          *
   ***************************************************************************/
-
+  //Ejemplo de configuracion de rut
+  'GET /phone/total':'PhonesController.total'
 
 };
